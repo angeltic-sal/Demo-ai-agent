@@ -41,9 +41,9 @@ or build the docker file locally:
 ``` bash
 
 # Build Docker Image
-docker build -t nachikethmamidi/uavlogviewer .
+docker build -t /uavlogviewer .
 
 # Run Docker Image
-docker run -e VUE_APP_CESIUM_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiOWYyM2ZjNy04MzgzLTQ2MjQtOWQ3Ny0yZDhhZTMyNjUyNTIiLCJpZCI6MzA4NjgxLCJpYXQiOjE3NDg5ODU1MDF9.XbPDkTDQDu5w4yzUcjrJOiXL82hn8D5AOketVrBlH5s -it -p 8080:8080 -v ${PWD}:/usr/src/app nachikethmamidi/uavlogviewer
+docker run -e VUE_APP_CESIUM_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiOWYyM2ZjNy04MzgzLTQ2MjQtOWQ3Ny0yZDhhZTMyNjUyNTIiLCJpZCI6MzA4NjgxLCJpYXQiOjE3NDg5ODU1MDF9.XbPDkTDQDu5w4yzUcjrJOiXL82hn8D5AOketVrBlH5s -it -p 8080:8080 -v ${PWD}:/usr/src/app /uavlogviewer
 
 ```
